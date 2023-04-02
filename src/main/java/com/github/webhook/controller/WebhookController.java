@@ -19,6 +19,6 @@ public class WebhookController {
         catch (Exception e){
             return new ResponseEntity<>("Bad Request", HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity<>(requestBody, HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(requestBody, HttpStatus.OK);
     }
 }
